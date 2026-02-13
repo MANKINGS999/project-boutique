@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.DS_Store
+recent_files.txt
+recent_files_ascii.txt
+*.log
+.gemini

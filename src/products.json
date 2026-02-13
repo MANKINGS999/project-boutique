@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "The Classic Trench",
+        "price": 895,
+        "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1936&auto=format&fit=crop",
+        "category": "Outerwear",
+        "style": "Classic",
+        "description": "A timeless trench coat crafted from premium water-resistant fabric. Features classic double-breasted design with belted waist."
+    },
+    {
+        "id": 2,
+        "name": "Silk Evening Gown",
+        "price": 1200,
+        "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=1908&auto=format&fit=crop",
+        "category": "Dresses",
+        "style": "Evening",
+        "description": "Elegant floor-length gown in luxurious silk. Perfect for formal occasions with its flowing silhouette and refined draping."
+    },
+    {
+        "id": 3,
+        "name": "Italian Leather Bag",
+        "price": 2450,
+        "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1935&auto=format&fit=crop",
+        "category": "Accessories",
+        "style": "Luxury",
+        "description": "Handcrafted in Florence from the finest Italian leather. Features gold-tone hardware and spacious interior."
+    },
+    {
+        "id": 4,
+        "name": "Cashmere Knit",
+        "price": 450,
+        "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1964&auto=format&fit=crop",
+        "category": "Essentials",
+        "style": "Casual",
+        "description": "Ultra-soft cashmere sweater with ribbed details. A wardrobe essential that pairs with everything."
+    },
+    {
+        "id": 5,
+        "name": "Wool Blazer",
+        "price": 720,
+        "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop",
+        "category": "Outerwear",
+        "style": "Professional",
+        "description": "Tailored wool blazer with structured shoulders. Perfect for the modern professional seeking timeless elegance."
+    },
+    {
+        "id": 6,
+        "name": "Midi Wrap Dress",
+        "price": 580,
+        "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1983&auto=format&fit=crop",
+        "category": "Dresses",
+        "style": "Casual",
+        "description": "Versatile wrap dress in flowing fabric. Flattering silhouette suitable for day or evening wear."
+    },
+    {
+        "id": 7,
+        "name": "Gold Chain Necklace",
+        "price": 1850,
+        "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1974&auto=format&fit=crop",
+        "category": "Accessories",
+        "style": "Luxury",
+        "description": "Statement necklace in 18k gold-plated brass. Bold yet refined, perfect for elevating any outfit."
+    },
+    {
+        "id": 8,
+        "name": "Linen Shirt",
+        "price": 320,
+        "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1972&auto=format&fit=crop",
+        "category": "Essentials",
+        "style": "Casual",
+        "description": "Breathable linen shirt with relaxed fit. Essential summer piece in natural, sustainable fabric."
+    },
+    {
+        "id": 9,
+        "name": "Velvet Cocktail Dress",
+        "price": 980,
+        "image": "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1974&auto=format&fit=crop",
+        "category": "Dresses",
+        "style": "Evening",
+        "description": "Luxurious velvet dress with elegant draping. Rich texture and sophisticated cut for special occasions."
+    },
+    {
+        "id": 10,
+        "name": "Leather Ankle Boots",
+        "price": 650,
+        "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1980&auto=format&fit=crop",
+        "category": "Accessories",
+        "style": "Classic",
+        "description": "Classic ankle boots in supple leather. Timeless design with comfortable heel height for all-day wear."
+    },
+    {
+        "id": 11,
+        "name": "Merino Wool Sweater",
+        "price": 380,
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2005&auto=format&fit=crop",
+        "category": "Essentials",
+        "style": "Casual",
+        "description": "Fine merino wool sweater with classic crew neck. Soft, breathable, and naturally temperature-regulating."
+    },
+    {
+        "id": 12,
+        "name": "Tailored Overcoat",
+        "price": 1150,
+        "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=1974&auto=format&fit=crop",
+        "category": "Outerwear",
+        "style": "Professional",
+        "description": "Impeccably tailored overcoat in premium wool blend. Sophisticated silhouette with timeless appeal."
+    }
+]
