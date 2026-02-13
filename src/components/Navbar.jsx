@@ -16,6 +16,7 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
+        { name: 'Home', href: '/', isRoute: true },
         { name: 'Collections', href: '/collections', isRoute: true },
         { name: 'Our Story', href: '#story', isRoute: false },
         { name: 'Journal', href: '#journal', isRoute: false },
@@ -23,12 +24,23 @@ const Navbar = () => {
         // { name: 'Admin', href: '/admin', isRoute: true },
     ];
 
+    useEffect(() => {
+        if (mobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [mobileMenuOpen]);
+
     return (
         <motion.nav
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}
-            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-cream/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${mobileMenuOpen ? 'h-screen bg-white' : scrolled ? 'bg-cream/80 backdrop-blur-md shadow-sm py-4' : 'bg-cream/5 backdrop-blur-[2px] py-6'
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
@@ -73,7 +85,7 @@ const Navbar = () => {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-espresso"
+                    className="md:hidden text-espresso z-[60]"
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 >
                     {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,20 +96,12 @@ const Navbar = () => {
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-cream z-40 flex flex-col items-center justify-center space-y-8"
+                        initial={{ x: '100%' }}
+                        animate={{ x: 0 }}
+                        exit={{ x: '100%' }}
+                        transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+                        className="fixed inset-0 bg-white z-[55] flex flex-col items-center justify-center space-y-8"
                     >
-                        {/* Close Button */}
-                        <button
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="absolute top-6 right-6 text-espresso hover:text-gold transition-colors p-2"
-                            aria-label="Close menu"
-                        >
-                            <X size={32} />
-                        </button>
-
                         {navLinks.map((link) => (
                             link.isRoute ? (
                                 <Link
